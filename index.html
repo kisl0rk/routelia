@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Routelia — спланируй своё путешествие по Европе.">
+  <title>Routelia — Plan your Europe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Routelia<span>.</span></a>
+<nav class="nav">
+  <a href="#destinations">Направления</a>
+  <a href="#planner">Планировщик</a>
+  <a href="#about">О проекте</a>
+</nav>
+<a href="#planner" class="header-button">Начать планирование ↗</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+    <h1>Европа ближе,<br>чем <span>кажется.</span></h1>
+    <p class="hero-description">
+      Создай своё путешествие. Выбирай города, исследуй новые места
+      и планируй поездку в собственном ритме.
+    </p>
+    <div class="hero-actions">
+      <a href="#planner" class="primary-button">Спланировать поездку ↗</a>
+      <a href="#destinations" class="secondary-button">Исследовать Европу</a>
+    </div>
+    <div class="hero-note">
+      <span class="note-dot"></span>
+      Твоё путешествие. Твои правила.
+    </div>
+  </div>
+  <div class="hero-image">
+    <img
+      src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85"
+      alt="Красивый вид на европейский город"
+    >
+    <div class="image-label">
+      <span>✦</span>
+      <div>
+        <strong>Somewhere in Europe</strong>
+        <small>Место для твоей следующей истории</small>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="destinations section" id="destinations">
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">FIND YOUR PLACE</span>
+      <h2>Куда отправимся?</h2>
+    </div>
+    <p>Города, в которых хочется остаться<br>чуть дольше.</p>
+  </div>
+  <div class="destination-grid">
+    <article class="destination-card">
+      <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=85" alt="Барселона">
+      <div class="card-info">
+        <span>ИСПАНИЯ</span>
+        <h3>Барселона</h3>
+        <p>Архитектура, море и каталонский вайб.</p>
+      </div>
+      <span class="card-arrow">↗</span>
+    </article>
+    <article class="destination-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=85" alt="Париж">
+      <div class="card-info">
+        <span>ФРАНЦИЯ</span>
+        <h3>Париж</h3>
+        <p>Маленькие кафе и большие впечатления.</p>
+      </div>
+      <span class="card-arrow">↗</span>
+    </article>
+    <article class="destination-card">
+      <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=800&q=85" alt="Рим">
+      <div class="card-info">
+        <span>ИТАЛИЯ</span>
+        <h3>Рим</h3>
+        <p>История, которую можно увидеть своими глазами.</p>
+      </div>
+      <span class="card-arrow">↗</span>
+    </article>
+    <article class="destination-card">
+      <img src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=85" alt="Амстердам">
+      <div class="card-info">
+        <span>НИДЕРЛАНДЫ</span>
+        <h3>Амстердам</h3>
+        <p>Каналы, велосипеды и уютные улочки.</p>
+      </div>
+      <span class="card-arrow">↗</span>
+    </article>
+  </div>
+</section>
+<section class="planner section" id="planner">
+  <div class="planner-heading">
+    <span class="eyebrow">YOUR JOURNEY, YOUR WAY</span>
+    <h2>Давай создадим<br>твоё путешествие.</h2>
+    <p>Расскажи, куда хочешь поехать, — начнём с основ.</p>
+  </div>
+  <form id="trip-form" class="planner-form">
+    <label>
+      Откуда отправляемся?
+      <input type="text" id="departure" value="Новосибирск" required>
+    </label>
+    <label>
+      Страна назначения
+      <select id="country" required>
+        <option value="">Выбери страну</option>
+        <option value="Испания">Испания</option>
+        <option value="Франция">Франция</option>
+        <option value="Италия">Италия</option>
+        <option value="Нидерланды">Нидерланды</option>
+        <option value="Германия">Германия</option>
+        <option value="Португалия">Португалия</option>
+        <option value="Чехия">Чехия</option>
+        <option value="Австрия">Австрия</option>
+        <option value="Греция">Греция</option>
+        <option value="Другая страна">Другая страна</option>
+      </select>
+    </label>
+    <label>
+      Город
+      <input type="text" id="city" placeholder="Например, Барселона" required>
+    </label>
+    <div class="form-row">
+      <label>
+        Дней
+        <input type="number" id="days" min="1" max="90" value="7" required>
+      </label>
+      <label>
+        Сезон
+        <select id="season">
+          <option value="Весна">Весна</option>
+          <option value="Лето" selected>Лето</option>
+          <option value="Осень">Осень</option>
+          <option value="Зима">Зима</option>
+        </select>
+      </label>
+    </div>
+    <label>
+      Бюджет на одного человека (€)
+      <input type="number" id="budget" min="1" value="1300" required>
+    </label>
+    <button type="submit" class="primary-button submit-button">
+      Создать мою поездку ↗
+    </button>
+    <div id="trip-result" class="trip-result" aria-live="polite" hidden></div>
+  </form>
+</section>
+<section class="about section" id="about">
+  <span class="eyebrow">A LITTLE MORE THAN A TRIP</span>
+  <h2>Не просто маршрут.<br><span>Твоя история.</span></h2>
+  <p>
+    Routelia создана для тех, кто хочет открывать Европу по-своему.
+    Без лишней сложности — только ты, твои планы и новые впечатления.
+  </p>
+</section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="logo">Routelia<span>.</span></a>
+    <p>Made for the places you haven't seen yet.</p>
+    <span>© 2026 Routelia</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
